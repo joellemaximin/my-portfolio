@@ -62,7 +62,14 @@ h1, h3{
     float:center;
     text-align: center;
     width: 1240px;
+    color: #000!important;
+
 }
+
+.presentation:hover{
+    color: #ccc !important;
+}
+
 
 
 
@@ -105,10 +112,10 @@ h1, h3{
 
 .software li{
     display: block;
-    width: 30%;
+    width: 22%;
     float: left;
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: 15px;
+    margin-left: 15px;
 }
 
 .soft-photo{
@@ -119,14 +126,17 @@ h1, h3{
 
 .software-item>  p> a{
     color: rgb(207, 81, 81)!important;
-    text-align: center;
-    text-shadow: 3%;
-
+    text-decoration-style: 
+    text-shadow: 5%;
+    margin-right: 5%;
+    margin-left: 5%;
+    padding: 1.4rem;
+    font-size: 14px;
 }
 
 .soft-photo img{
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
     transform: scale(1.15);
     transition: all 0.5s;
 }
@@ -139,6 +149,15 @@ h1, h3{
     margin-top: 60px;
 }
 
+#img1{
+    height: 200px;
+}
+
+#img2, #img3{
+    height: 200px;
+
+
+}
 /********* contact part ***********/
 
 .contact{
@@ -189,6 +208,9 @@ h1, h3{
     padding-bottom: 2rem;
 }
 
+.title-footer > p{
+    padding-bottom: 9px;
+}
 .fas,.fa-user, .fa-phone, .fa-globe, .fa-home, .fa-envelope{
     font-size: 2rem;
     margin-left: 5px;
