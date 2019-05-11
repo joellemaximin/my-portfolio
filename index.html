@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="style.css">
     <link  rel="stylesheet" href="https://code.jquery.com/jquery-3.3.1.min.js">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script type="text/javascript" src="app.js"></script>
 
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
@@ -12,8 +13,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
-    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="animate.min.css">
     <title>Front-End Developer</title>
 </head>
@@ -50,15 +51,16 @@
         <i class="fas fa-angle-double-down" data-fa-transform="grow-16" id="animate" alt="scroll-down"></i>
       </div>
     </section>
-    <section id="about">
-      <h1>ABOUT ME</h1>
+    <div id="about" class="clearfix"></div>
+    <section>
+      <h3 class="h_contact">About me</h3>
       <p class="copy">
         I'm passionate Javascript world, with significant experience working <br> on Front End and Back End as SQlite, mySQL, PHPmyAdmin. 
         I love collaborating with a team but also happy to work indepently. <br> Usually, I enjoy
         gaming on PS4, watching comedies on Netflix or Youtube and running, or tennis basketball.
       </p>
       <div class="container">            
-        <h3>Skills</h3>
+        <h3 class="h_contact">My Skills</h3>
           <div class="row">
             <div id="left-in" class="fadeInLeft">
               <div class="col-lg-6 col-md-6">
@@ -106,7 +108,7 @@
                 <div class="progress">
                   <div class="progress-bar progress-bar-primary progress-bar-striped active" role="progressbar" aria-valuenow="90" aria-valuemin="0"
                     aria-valuemax="100" style="width:90%">
-                    <span>Bootstrap/Material UI</span>
+                    <span>Bootstrap3&4/Material UI</span>
                   </div>
                 </div>
                 <div class="progress">
@@ -120,42 +122,43 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> 
+    <div id="portfolio" class="clearfix"></div>
     <section class="environments">
+      <h3 class="h_contact">My dashboard</h3>
       <ul class="software">
-        <li>
+        <li class="software-item" class="software-item">
         <figure class="soft-photo">
           <img src="image1.jpg" alt="">
-          <a href="" id="dominoGames" title="Domino Games"></a>
           </figure>
-        </li><li>
-        <figure class="soft-photo">
-          <img src="image2.png" alt="">
-          <a href="" id="memory" title="Memory"></a>
-          </figure>
-  
-        </li><li>
-        <figure class="soft-photo">
-          <img src="img5.jpg" id="">
-          <a href="" id="justb"></a>
-          </figure>
-      
-        </li><li>
-        <figure class="soft-photo">
-          <img src="image4.jpg" alt="">
-          <a href="" id="gardenmarket/reactwebsite"></a>
-          </figure>
-      
+          <p><a href="https://kanasukre-location.herokuapp.com/en/" id="locationCars" title="superCars.location">Cars Location</a></p>
         </li>
+
+        <li class="software-item">
+        <figure class="soft-photo">
+          <img src="image2.jpg" alt="">
+          </figure>
+          <p><a href="https://github.com/joellemaximin/gardenmarket" id="restaurant" title="Garden Market">Garden Restaurant</a></p>
+        </li>
+
+        <li class="software-item">
+        <figure class="soft-photo">
+          <img src="image3.jpg">
+          </figure>
+          <p><a href="https://kanasukre-location.herokuapp.com/en/" id="kanasukrelocation" title="Kanasukre location voiture">Kannasukre Location Website</a></p>
+        </li>
+        
       </ul>
     </section> 
+
     <!-- Contact -->
+    <div id="contact"></div>
     <section>
       <div class="clearfix"></div>
-      <h2 class="h_contact">Contact</h2>
+      <h2 class="h_contact" id="contact">Contact</h2>
       <p class="p_contact">Please enter your informations, if you want to work with me. (Currently in process) But you can contact me at <b>joelle.maximin@gmail.com</b> or <b>0782583417</b></p>
       <div class="contact">
-        <div class="container" id="contact">
+        <div class="container">
           <div class="row">
             <div class="col-lg-6 col-md-6">
               <div class="input-group input-group-lg">
@@ -188,23 +191,24 @@
     <div id="footer" class="footer">
       <div class="container">
         <div class="row">
-          <div class="col-lg-4 col-md-4">
-            <h4>Contact me</h4>
-            <p><i class="fa fa-home" aria-hidden="true"></i> 234 street Penny Hill, NW89RU</p>
+          <div class="col-lg-4 col-md-4 col-xs-4">
+            <h4 class="title-footer">Contact me</h4>
+            <p><i class="fa fa-home" aria-hidden="true"></i> Rue Mazière, VERSAILLES 78000</p>
             <p><i class="fa fa-envelope" aria-hidden="true"></i> joelle.maximin@gmail.com</p>
-            <p><i class="fa fa-phone" aria-hidden="true"></i> +44 094 494 2004</p>
+            <p><i class="fa fa-phone" aria-hidden="true"></i> +33 782583417 </p>
             <p><i class="fa fa-globe" aria-hidden="true"></i> info.followers.com</p>
           </div>
-          <div class="col-lg-4 col-md-4">
-            <h4>About</h4>
-            <p><i class="fa fa-square" aria-hidden="true"></i>About me</p>
-            <p><i class="fa fa-square" aria-hidden="true"></i>Privacy</p>
+          <div class="col-lg-4 col-md-4 col-xs-4">
+            <h4 class="title-footer">About</h4>
+            <p><i class="fas fa-address-card" aria-hidden="true"></i>About me</p>
+            <p><i class="fas fa-user-shield" aria-hidden="true"></i>Privacy</p>
           </div>
-          <div class="col-lg-4 col-md-4">
-            <i class="fab fa-facebook-square" aria-hidden="true"></i>
-            <i class="fa fa-twitter" aria-hidden="true"></i>
-            <i class="fa fa-linkedin" aria-hidden="true"></i>
-            <i class="fa fa-github" aria-hidden="true"></i>
+          <div class="col-lg-4 col-md-4 col-xs-4">
+            <h4 class="title-footer">Social Media</h4>
+            <i class="fab fa-facebook-f" aria-hidden="true"></i>
+            <i class="fab fa-twitter" aria-hidden="true"></i>
+            <i class="fab fa-linkedin" aria-hidden="true"></i>
+            <i class="fab fa-github" aria-hidden="true"></i>
           </div>
         </div>
       </div>
@@ -216,7 +220,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-  <script type="text/javascript" src="app.js"></script>
 
 </body>
 </html>
