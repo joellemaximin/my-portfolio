@@ -44,7 +44,7 @@ h1, h3{
 .navbar a{
     opacity: 0.7;
 }
-#myNavbar a{
+.nav-link a{
     margin: 5px 26px;
     margin-top: 5px;
     padding: 25px 25px;
@@ -55,6 +55,7 @@ h1, h3{
     text-decoration: none;
 }
 
+/******* End Navbar *******/
 
 .presentation{
     padding-top: 100px;
@@ -69,9 +70,6 @@ h1, h3{
 .presentation:hover{
     color: #ccc !important;
 }
-
-
-
 
 .h_contact{
     text-align: center;
@@ -93,14 +91,20 @@ h1, h3{
     background-size: cover;
 }
 
-
-
 .copy{
     width: 50%;
     margin-left:16em;
     font-size: 20px;
 }
 
+/****** Progress Bar *******/
+.progress{
+    margin-top: 17px;
+}
+
+.progress span{
+    font-size: 16px;
+}
 /*********** Software pic and links *******/
 
 .software{
@@ -126,12 +130,12 @@ h1, h3{
 
 .software-item>  p> a{
     color: rgb(207, 81, 81)!important;
-    text-decoration-style: 
     text-shadow: 5%;
     margin-right: 5%;
     margin-left: 5%;
-    padding: 1.4rem;
-    font-size: 14px;
+    line-height: 1rem;
+    font-size: 15px;
+    display: inline-block;
 }
 
 .soft-photo img{
@@ -153,9 +157,9 @@ h1, h3{
     height: 200px;
 }
 
-#img2, #img3{
-    height: 200px;
+#img2, #img3,#img4{
 
+    height: 200px;
 
 }
 /********* contact part ***********/
@@ -202,6 +206,9 @@ h1, h3{
 }
 
 /****** Footer *******/
+.footer{
+    padding-top: 2rem;
+}
 
 .footer > .title-footer{
     padding-top: 2rem;
@@ -212,13 +219,22 @@ h1, h3{
     padding-bottom: 9px;
 }
 .fas,.fa-user, .fa-phone, .fa-globe, .fa-home, .fa-envelope{
-    font-size: 2rem;
-    margin-left: 5px;
-    margin-right: 5px;
+    font-size: 1.3rem;
+    margin-left: 10px;
+    margin-right: 10px;
+
 }
+
+.fa-linkedin, .fa-github {
+    color: #fff;
+}
+.fa, .fab, .fal, .far, .fas{
+    line-height: inherit!important;
+}
+
 .fab{
-    font-size: 2rem;
-    margin-right: 4px;
+    font-size: 1.3rem;
+    margin-right: 10px;
 }
 @media(max-width:760px) {
     
@@ -226,25 +242,64 @@ h1, h3{
         background-color: #000000 ;
     }
 
-
-    #about h1, h3{
+    .h_contact{
         font-size: 20px;
-        font-weight: 600;
-        margin-left: 120px;
-  
-    }
-
-    .container h3{
-        font-size: 20px;
-        font-weight: 600;
-        margin-left: 120px;
     }
 
     .container .left-in{
         margin-top: 10px;
     }
 
+}
 
+@media(max-width:992px) {
+    .navbar-toggler-icon{
+        border: 4px solid #4153b0!important;
+        background-color: #4153b0!important;
+    }
+
+    .container-fluid{
+        background-color: #000 ;
+    }
+
+    .h_contact{
+        font-size: 25px;
+    }
+
+    p{
+
+    }
+
+    .container .left-in{
+        margin-top: 10px;
+    }
+
+    .about-me{
+        text-align: center;
+    }
+
+    .software li{
+        display: block;
+        float: left;
+ 
+    }
+
+    .soft-photo{
+        width: 200%;
+        height: 200%;
+        overflow: hidden;
+    }
+
+
+
+    .software-item>  p> a{
+        color: rgb(207, 81, 81)!important;
+        margin-right: 5%;
+        margin-left: 5%;
+        font-size: 11px;
+        display: inline-block;
+        line-height: 1rem;
+    }
 
 
 }
