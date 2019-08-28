@@ -55,7 +55,7 @@
       <p class="col-md-12 text-center">
         I'm franch passionate Javascript world since 3 years, with significant experience working <br> on Front End and Back End as SQlite, mySQL, PHPmyAdmin. 
         I love collaborating with a team but also happy to work indepently. <br> Usually, I enjoy
-        gaming on PS4, watching comedies on Netflix or Youtube and running, or tennis basketball.
+        gaming on PS4, watching movies on Netflix or Youtube or tennis and basketball.
       </p>
 
       <div class="container">            
@@ -163,28 +163,30 @@
       <div class="contact">
         <div class="container">
           <div class="row">
-            <div class="col-lg-6 col-md-6">
-              <div class="input-group">
-                <span class="input-group-addon" id="sizing-addon1"><i class="fa fa-user" aria-hidden="true"></i></span>
-                <!-- Faire fonctionner ce formulaire pour que les recruiter me contact-->
-                <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon1">
+            <form action='/' method='POST'>
+              <div class="col-lg-6 col-md-6">
+                <div class="input-group">
+                  <span class="input-group-addon" id="sizing-addon1"><i class="fa fa-user" aria-hidden="true"></i></span>
+                  <!-- Faire fonctionner ce formulaire pour que les recruiter me contact-->
+                  <input type="text" class="form-control" name="username" placeholder="Username" aria-describedby="sizing-addon1">
+                </div>
+                <div class="input-group">
+                  <span class="input-group-addon" id="sizing-addon1"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                  <input type="text" class="form-control" name="email" placeholder="Email Address" aria-describedby="sizing-addon1">
+                </div>
+                <div class="input-group">
+                  <span class="input-group-addon" id="sizing-addon1">    <i class="fa fa-phone" aria-hidden="true"></i></span>
+                  <input type="text" class="form-control" placeholder="Phone Number" aria-describedby="sizing-addon1" name="phone">
+                </div>
               </div>
-              <div class="input-group">
-                <span class="input-group-addon" id="sizing-addon1"><i class="fa fa-envelope" aria-hidden="true"></i></span>
-                <input type="text" class="form-control" placeholder="Email Address" aria-describedby="sizing-addon1">
+              <div class="col-lg-6 col-md-6">
+                <div class="input-group">
+                  <textarea name="message" id="" cols="70" rows="6"></textarea>
+                </div>
+                <button class="btn btn-lg">Submit your message</button>
               </div>
-              <div class="input-group">
-                <span class="input-group-addon" id="sizing-addon1">    <i class="fa fa-phone" aria-hidden="true"></i></span>
-                <input type="text" class="form-control" placeholder="Phone Number" aria-describedby="sizing-addon1">
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-6">
-              <div class="input-group">
-                <textarea name="" id="" cols="70" rows="6"></textarea>
-              </div>
-              <button class="btn btn-lg">Submit your message</button>
-            </div>
-          </div>  
+            </form>
+          </div>
         </div>
       </div>
     </section>

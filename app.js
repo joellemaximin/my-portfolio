@@ -1,8 +1,3 @@
-const bounceDown = document.getElementById("animate"){
-
-  bounceDown.addClass('animated bounceInDown');
-
-}
 
 setTimeout(doubleDown, 2000)
 
