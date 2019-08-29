@@ -15,7 +15,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 // parse application to json
 app.use(bodyParser.json())
 
-mongo.connect("mongodb://localhost", function(err, client){
+mongo.connect("mongodb://localhost", { useNewUrlParser: true }, function(err, client){
     if(err){
         throw err;
     }
