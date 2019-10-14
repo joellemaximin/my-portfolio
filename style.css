@@ -25,6 +25,12 @@ a:active {
     text-decoration: none;
 
 }
+#home h1, #home h2 {
+    text-shadow: -1px -1px 0 #fff,
+    1px -1px 0 #fff,
+    -1px 1px 0 #fff,
+    1px 1px 0 #fff;
+}
 h1, h3{
     text-transform: uppercase;
     font-weight: 700;
@@ -68,15 +74,19 @@ h1, h3{
 }
 
 .presentation:hover{
-    color: #ccc !important;
+    /* color: #ccc !important; */
 }
 
 .h_contact{
     text-align: center;
     text-transform: uppercase;
-    font-weight: 100;
     padding-top: 15px;
     padding-bottom: 15px;
+    margin:3rem auto;
+    
+
+ 
+
 }
 .p_contact{
     margin-left: 18%;
@@ -119,12 +129,12 @@ h1, h3{
     background-color:rgb(16, 11, 11) !important;
     background-clip: border-box;
     border: none!important;
-    margin-right: 15px;
-    margin-left: 15px;
+    margin-right:5rem;
+    margin-left:5rem;
 }
 
 .software-item>  p> a{
-    color: rgb(207, 81, 81)!important;
+    color: #ccc!important;
     text-shadow: 5%;
     margin-right: 5%;
     margin-left: 5%;
@@ -241,6 +251,8 @@ h1, h3{
 
     .h_contact{
         font-size: 20px;
+        margin:3rem auto;
+
     }
 
     .container .left-in{
@@ -279,6 +291,7 @@ h1, h3{
     }
 
     .h_contact{
+        margin: 3rem auto;
         font-size: 25px;
     }
 
@@ -305,7 +318,7 @@ h1, h3{
 
 
     .software-item>  p> a{
-        color: rgb(207, 81, 81)!important;
+        color: #ccc!important;
         margin-right: 5%;
         margin-left: 5%;
         font-size: 11px;

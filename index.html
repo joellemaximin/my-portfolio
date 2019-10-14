@@ -29,11 +29,12 @@
           <a class="nav-link" href="#about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#portfolio">Portfolio</a>
+            <a class="nav-link" href="#skills">My skills</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
+          <a class="nav-link" href="#portfolio">Portfolio</a>
         </li>
+    
       </ul>
     </div>
   </nav>
@@ -43,7 +44,7 @@
       <div class="presentation" id="home">
         <h2>Hi, there<br></h2>
         <h2> I'm JOELLE MAXIMIN</h2>
-        <h1>Front-End developer ReactJS</h1>
+        <h1>Front-End developer</h1>
         <i class="fas fa-angle-double-down" data-fa-transform="grow-16" id="animate" alt="scroll-down"></i>
       </div>
     </section>
@@ -51,14 +52,20 @@
     <div id="about" class="clearfix"></div> 
      <h3 class="h_contact">About me</h3>
 
-    <section class="row about-me">
-      <p class="col-md-12 text-center">
-        I'm franch passionate Javascript world since 3 years, with significant experience working <br> on Front End and Back End as SQlite, mySQL, PHPmyAdmin. 
-        I love collaborating with a team but also happy to work indepently. <br> Usually, I enjoy
-        gaming on PS4, watching movies on Netflix or Youtube or tennis and basketball.
-      </p>
+    <section class=" container about-me">
+      <div class="row">
+        <p class="col-md-12 col-xs-6 text-center">
+          I'm a passionate, self-taught Front-end developer since 2017.
+          I'm focused on ReactJS, HTML, CSS, Javascript and ES6.
+          <br>
+          I love collaborating with a team, but I'm also happy to work independently.
+          <br>
+          Education level: French Baccalaureat +2 (Web Developer training at Simplon).
+        </p>
+      </div>
+     
 
-      <div class="container">            
+      <div class="container" id="skills">            
         <h3 class="h_contact">My Skills</h3>
           <div >
             <div  class="fadeInLeft">
@@ -103,13 +110,13 @@
                 <div class="progress"  style="height: 30px;">
                   <div class="progress-bar bg-info" role="progressbar" aria-valuenow="70" aria-valuemin="0"
                     aria-valuemax="100" style="width:60%">
-                    <span>PHP</span>
+                    <span>phpMyAdmin</span>
                   </div>
                 </div>
                 <div class="progress"  style="height: 30px;">
                   <div class="progress-bar bg-info" role="progressbar" aria-valuenow="90" aria-valuemin="0"
                     aria-valuemax="100" style="width:90%">
-                    <span>Bootstrap3&4/Material UI</span>
+                    <span>Bootstrap4/Material UI</span>
                   </div>
                 </div>
                 <div class="progress"  style="height: 30px;">
@@ -128,59 +135,27 @@
     <div id="portfolio" class="clearfix"></div>
     <section class="environments">
       <h3 class="h_contact">My dashboard</h3>
-      <div class="software row clearfix">
-        <div class="card" style="width: 18rem;">
-          <img src="image1.jpg"  id="img1" class="card-img-top" alt="...">
-          <div class="card-body software-item">
-            <p><a href="https://location01car.herokuapp.com/" id="locationCars" title="superCars.location">Rent cars</a></p>
+      <div class="software container ">
+        <div class="row">
+          <div class="card" style="width: 25rem;">
+            <img src="volkswagen.png"  id="img1" class="card-img-top" alt="...">
+            <div class="card-body software-item">
+              <p><a href="https://location01car.herokuapp.com/" id="locationCars" title="superCars.location">rent cars</a></p>
+            </div>
           </div>
-        </div>
-
-        <div class="card" style="width: 18rem;">
-          <img src="image3.jpg"  id="img3" class="card-img-top" alt="...">
-          <div class="card-body software-item">
-            <p><a href="https://kanasukre-location.herokuapp.com/en/" id="kanasukrelocation" title="Kanasukre location voiture">Kannasukre Location</a></p>
+  
+          <div class="card" style="width: 25rem;">
+            <img src="kannasuk.png"  id="img3" class="card-img-top" alt="...">
+            <div class="card-body software-item">
+              <p><a href="https://kanasukre-location.herokuapp.com/en/" id="kanasukrelocation" title="Kanasukre location voiture">kannasukre location</a></p>
+            </div>
           </div>
+      
         </div>
-
+        
     </section> 
 
-    <!-- Contact -->
-    <div id="contact" class="clearfix"></div>
-    <section>
-      <h2 class="h_contact" id="contact">Contact</h2>
-      <p class="p_contact">Please enter your informations, if you want to work with me. (Currently in process) But you can contact me at <b>joelle.maximin@gmail.com</b> or <b>0782583417</b></p>
-      <div class="contact">
-        <div class="container">
-          <div class="row">
-            <form action='/' method='POST'>
-              <div class="col-lg-6 col-md-6">
-                <div class="input-group">
-                  <span class="input-group-addon" id="sizing-addon1"><i class="fa fa-user" aria-hidden="true"></i></span>
-                  <!-- Faire fonctionner ce formulaire pour que les recruiter me contact-->
-                  <input type="text" class="form-control" name="username" placeholder="Username" aria-describedby="sizing-addon1">
-                </div>
-                <div class="input-group">
-                  <span class="input-group-addon" id="sizing-addon1"><i class="fa fa-envelope" aria-hidden="true"></i></span>
-                  <input type="text" class="form-control" name="email" placeholder="Email Address" aria-describedby="sizing-addon1">
-                </div>
-                <div class="input-group">
-                  <span class="input-group-addon" id="sizing-addon1">    <i class="fa fa-phone" aria-hidden="true"></i></span>
-                  <input type="text" class="form-control" placeholder="Phone Number" aria-describedby="sizing-addon1" name="phone">
-                </div>
-              </div>
-              <div class="col-lg-6 col-md-6">
-                <div class="input-group">
-                  <textarea name="message" id="" cols="70" rows="6"></textarea>
-                </div>
-                <button class="btn btn-lg">Submit your message</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End Contact -->
+   
 
     <!-- Footer -->
     <div id="footer" class="footer">
@@ -188,22 +163,15 @@
         <div class="row">
           <div class="col">
             <h4 class="title-footer">Contact me</h4>
-            <p><i class="fa fa-home" aria-hidden="true"></i>VERSAILLES 78000</p>
+            <p><i class="fa fa-home" aria-hidden="true"></i>Brixton SW22</p>
             <p><i class="fa fa-envelope" aria-hidden="true"></i> joelle.maximin@gmail.com</p>
             <p><i class="fa fa-phone" aria-hidden="true"></i> +33 782583417 </p>
           </div>
-          <div class="col">
-            <h4 class="title-footer">About</h4>
-            <p><i class="fas fa-address-card" aria-hidden="true"></i>About me</p>
-            <p><i class="fas fa-user-shield" aria-hidden="true"></i>Privacy</p>
-          </div>
+         
           <div class="col">
             <h4 class="title-footer">Social Media</h4>
             <a href="https://www.linkedin.com/in/jo%C3%ABlle-maximin-1428a814b/" title="LinkedIn-JoelleMaximin"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/joellemaximin" title="Github-JoelleMaximin"><i class="fab fa-github"></i></a>
-            <i class="fab fa-facebook-f" aria-hidden="true" disabled></i>
-            <i class="fab fa-twitter" aria-hidden="true" disabled></i>
-            
+            <a href="https://github.com/joellemaximin" title="Github-JoelleMaximin"><i class="fab fa-github"></i></a> 
           </div>
         </div>
       </div>
