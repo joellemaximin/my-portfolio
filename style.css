@@ -93,7 +93,6 @@ h1, h3{
     background-size: 100px;
 }
 #home{
-    background: url(one.jpeg) no-repeat center center fixed;
     display: table;
     height: 100%;
     position: relative;
